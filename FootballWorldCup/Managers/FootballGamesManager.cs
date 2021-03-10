@@ -31,7 +31,7 @@ namespace FootballWorldCup.Implementation.Managers
         {
             if (_storage.ContainsFootballMatch(homeTeamName, awayTeamName))
             {
-                throw new FootballWorldCupException($"Match between {homeTeamName} and {awayTeamName} is already exists.");
+                throw new FootballWorldCupException($"Match between {homeTeamName} and {awayTeamName} already exists.");
             }
 
             return _storage.Add(new FootballMatch
